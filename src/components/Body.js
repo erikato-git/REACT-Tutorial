@@ -11,8 +11,6 @@ export default function Body(props){
     );
   };
 
-export function Body2(props){
-    return (
-      <p>{props}</p>
-    );
-};
+export const Body2 = () => (
+    <p>Body2, bla bla bla</p>
+);

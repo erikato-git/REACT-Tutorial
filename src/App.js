@@ -19,7 +19,7 @@ function App() {
                     b: 6
                   }}
           />
-          {/* <Body2 /> */}
+          <Body2 />
           </p>
         </div>
         <a
