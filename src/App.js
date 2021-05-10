@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Body, {Body2} from './components/Body';
+import Counter from './components/State_Component';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div>
-          <p style={{color: "blue"}}>
+          <p style={{color: "white"}}>
           <Body title="Body1 Title" 
 //                  number={add}
                   number={(a,b) => a + b}
@@ -20,16 +21,10 @@ function App() {
                   }}
           />
           <Body2 />
+          <Counter />
           </p>
         </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Learn React
-        </a>
+
       </header>
     </div>
   );
