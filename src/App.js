@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Body, {Body2} from './components/Body';
 import Counter from './components/State_Component';
+import ImageSlider from './components/ImageSlider';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           />
           <Body2 />
           <Counter />
+          <ImageSlider />
           </p>
         </div>
 
