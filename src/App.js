@@ -19,10 +19,12 @@ class App extends React.Component {
   }
 
   render(){
+    const buttonText = this.state.visible ? "Hide" : "Show";
+
     return(
       <div className="App">
         {this.state.visible ? <ImageSlider /> : null}
-        <button onClick={this.handleVisible}>hide</button>
+        <button onClick={this.handleVisible}>{buttonText}</button>
       </div>
     );
   }
