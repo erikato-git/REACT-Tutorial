@@ -16,7 +16,7 @@ export default class ImageSlider extends React.Component{
             idx: this.state.idx + 1
         });
 
-        if(this.state.idx == this.state.images.length-1){
+        if(this.state.idx === this.state.images.length-1){
             this.setState({
                 idx: this.idx = 0
             });
@@ -37,7 +37,7 @@ export default class ImageSlider extends React.Component{
     render() {
         return(
             <div>
-                <img 
+                <img alt=""
                 style={{
                     width:100,
                     height:100

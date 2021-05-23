@@ -1,12 +1,48 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import Body, {Body2} from './components/Body';
-import Counter from './components/State_Component';
+// import Body, {Body2} from './components/Body';
+// import Counter from './components/State_Component';
 import ImageSlider from './components/ImageSlider';
+import React from "react";
+
+class App extends React.Component {
+  
+  state = { 
+    visible: true
+  }
+
+  handleVisible = () => {
+    this.setState({
+      visible: !this.state.visible
+    });
+    console.log(this.state)
+  }
+
+  render(){
+    return(
+      <div className="App">
+        {this.state.visible ? <ImageSlider /> : null}
+        <button onClick={this.handleVisible}>hide</button>
+      </div>
+    );
+  }
 
 
+
+}
+
+
+
+/*
 function App() {
 //  const add = (a,b) => a + b;
+
+  state = { 
+    visible: true
+  }
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -23,7 +59,7 @@ function App() {
           />
           <Body2 />
           <Counter />
-          <ImageSlider />
+          {this.state.visible ? <ImageSlider /> : null}
           </p>
         </div>
 
@@ -31,5 +67,6 @@ function App() {
     </div>
   );
 }
+*/
 
 export default App;
