@@ -25,7 +25,7 @@ export default class Form_Validation extends React.Component{
     render(){
         return(
             <div>
-                // TODO: Submit button failed
+                {/* TODO: Submit button failed */}
                 <input type="text" placeholder="username" onChange={this.handlerUsername}/>
                 <input type="text" placeholder="password" onChange={this.handlerPassword}/>
                 <input type="text" placeholder="confirm password" onChange={this.handlerPassword}/>

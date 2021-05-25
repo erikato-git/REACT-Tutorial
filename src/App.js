@@ -1,6 +1,7 @@
 import './App.css';
 import React from "react";
-import FORM_VALIDATION from './components/Form_Validation';
+import FETCH_RANDAOM_USER from './components/Fetch_Random_User';
+// import STATE_COMPONENT from './components/State_Component';
 
 class App extends React.Component {
   
@@ -18,7 +19,8 @@ class App extends React.Component {
   render(){
     return(
       <div className="App">
-        <FORM_VALIDATION />
+        < FETCH_RANDAOM_USER/>
+        {/* < STATE_COMPONENT /> */}
       </div>
     );
   }

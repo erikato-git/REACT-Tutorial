@@ -2,12 +2,8 @@ import React from "react";
 
 export default class Counter extends React.Component{
   
-    constructor(props){
-        super(props);
-
-        this.state = {
-            count: 0
-        };
+    state = {
+        count: 0
     }
 
     btnIncCounter = () => {
